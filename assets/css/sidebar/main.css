@@ -1,0 +1,84 @@
+.sidebar {
+	position:fixed;
+}
+.navbar-default {
+	background:none;
+}
+.navbar-static-top {
+	z-index:500 !important;
+}
+
+.sidebar-search input[type="text"] {
+	border-color:#fff;
+	background:none;
+	color:#fff;
+	border-radius:0px;
+}
+
+.sidebar .form-control::-webkit-input-placeholder { color: white; }
+.sidebar .form-control:-moz-placeholder { color: white; }
+.sidebar .form-control::-moz-placeholder { color: white; }
+.sidebar .form-control:-ms-input-placeholder { color: white; }
+
+/*
+	Suggestions
+*/
+#sidebar-search-suggestions {
+	background-color:#ffc40d;
+	color:#160752;
+}
+
+#sidebar-search-suggestions li a {
+	color:#160752;
+}
+
+#sidebar-search-suggestions li a:hover {
+	background-color:#160752;
+	color:#FFF;
+}
+.sidebar ul li {
+	border-bottom:none;
+}
+
+.sidebar ul li a {
+	color:#fff;
+	background-color:none !important;
+}
+
+.sidebar ul li a:hover {
+	color:#160752;
+	background-color:#FFF;
+}
+
+.sidebar ul li a.active {
+	color:#160752;
+	background-color:#fff;
+}
+
+#sidebar-search-options button {
+	border-radius:0px 0px 0px 0px;
+	border-color:#FFF;
+	color:#160752;
+}
+
+#sidebar-search-options button:hover {
+	background-color:#160752;
+	color:#fff;
+}
+
+#sidebar-search-options.btn-default.active,
+#sidebar-search-options.btn-default:active,
+#sidebar-search-options.open>.dropdown-toggle.btn-default {
+	background-color:#160752;
+	color:#fff;
+}
+
+#sidebar-search-options .dropdown-menu li button {
+	color:#160752;
+	background-color:#fff;
+}
+
+#sidebar-search-options .dropdown-menu li button:hover {
+	background-color:#160752;
+	color:#fff;
+}
