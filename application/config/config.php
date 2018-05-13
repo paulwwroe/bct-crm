@@ -1,6 +1,53 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+/*
+|--------------------------------------------------------------------------
+| After Log Out URL
+|--------------------------------------------------------------------------
+| The URL that is navigated to after logging out.
+*/
+$config['after_log_out_url'] = "https://www.blatchingtoncourt.org.uk/_crm/";
+/*
+|--------------------------------------------------------------------------
+| Main Menu Items
+|--------------------------------------------------------------------------
+|
+| An array that represents each menu item that displays within the
+| the main menu. Each menu item has a title (what is displayed in the UI),
+| an icon (the Font Awesome icon that is shown next to the menu item) and
+| the URL that is navigated to when the menu item is clicked.
+|
+*/
+$config['main_menu'] = array(
+	"items" => array(
+		array(
+			"title" => "Dashboard",
+			"url" => "dashboard",
+			"icon" => "fa-dashboard"
+		),
+		array(
+			"title" => "Notes",
+			"url" => "note/index",
+			"icon" => "fa-edit"
+		),
+		array(
+			"title" => "Tasks",
+			"url" => "task/index",
+			"icon" => "fa-hand-o-right"
+		),
+		array(
+			"title" => "Grants",
+			"url" => "grant/index",
+			"icon" => "fa-heart-o"
+		),
+		array(
+			"title" => "Log Out",
+			"url" => "user/logout",
+			"icon" => "fa-times-circle"
+		)
 
+	)
+);
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'https://www.blatchingtoncourt.org.uk/_crm/';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +82,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -100,7 +147,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -158,7 +205,7 @@ $config['composer_autoload'] = FALSE;
 | DO NOT CHANGE THIS UNLESS YOU FULLY UNDERSTAND THE REPERCUSSIONS!!
 |
 */
-$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
+$config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-@';
 
 /*
 |--------------------------------------------------------------------------
@@ -377,11 +424,11 @@ $config['encryption_key'] = '';
 | except for 'cookie_prefix' and 'cookie_httponly', which are ignored here.
 |
 */
-$config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ci_session';
+$config['sess_driver'] = 'database';
+$config['sess_cookie_name'] = 'ci_sessions';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = NULL;
-$config['sess_match_ip'] = FALSE;
+$config['sess_save_path'] = 'ci_sessions';
+$config['sess_match_ip'] = TRUE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
 
@@ -521,3 +568,20 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/*
+|--------------------------------------------------------------------------
+| Icons
+|--------------------------------------------------------------------------
+|
+| The array below maps Font Awesome icons to each page title.
+|
+*/
+$config['icons'] = array(
+	'Dashboard' => 'fa fa-dashboard',
+	'Notes' => 'fa fa-edit',
+	'Grants' => 'fa fa-heart',
+	'User' => 'fa fa-user',
+	'Users' => 'fa fa-users',
+	'Search' => 'fa fa-search'
+);

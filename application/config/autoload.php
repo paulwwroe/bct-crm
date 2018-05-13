@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('Template','email','database','session','form_validation');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,16 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array();
+$autoload['helper'] = array(
+	'url',
+	'check_session_helper',
+	'form','iconify_helper',
+	'get_user_theme_helper',
+	'get_users_helper',
+	'format_date_helper',
+	'load_scripts_helper',
+	'modal_helper'
+);
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +141,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$autoload['model'] = array('ApiModel','SearchModel','UserModel','NoteModel','GrantModel', 'ClientModel');
