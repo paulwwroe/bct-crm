@@ -7,8 +7,7 @@ class User extends CI_Controller {
 	private $tbl_key = 'user_id';
 
 	private $scripts = array(
-		'assets/js/user/main.js',
-		'assets/js/classes/LogIn.js'
+		'assets/js/user/main.js'
 	);
 
 	public function __construct() {

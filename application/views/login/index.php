@@ -1,39 +1,38 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="login-panel panel panel-default">
-                <div class="panel-heading" style="background-color:#fff;text-align:center;">
-                    <h1><i class="fa fa-lock"></i> Log In</h1>
-                </div>
-                <div class="panel-body">
-                    
+<div class="masthead">
+    <div class="masthead-bg">
+
+    </div>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 my-auto">
+                <div class="masthead-content text-white py-5 py-md-0">
+
+                    <h1 class="mb-3">Log In</h1>
+
+                    <p class="mb-5">Please enter your username and password below.</p>
+
                     <?= form_open('user/login',array('id' => 'logInForm')) ?>
-                        
-                        <fieldset>
 
-                            <!-- Email -->
-                            <div class="form-group">
-                                <label for="email" class="sr-only">Username</label>
-                                <input type="text" id="emailText" class="form-control" name="email" placeholder="Username" />
-                            </div>
+                        <!-- Referrer -->
+                        <input type="hidden" id="referrer" name="referrer" value="<?php echo $_GET['referrer']; ?>">
 
-                            <!-- Password -->
-                            <div class="form-group">
-                                <label for="password"  class="sr-only">Your Password</label>
-                                <input type="password" id="passwordText" class="form-control" name="password" placeholder="Password" />
-                            </div>
+                        <!-- Username -->
+                        <div class="form-group input-group-newsletter">
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-label="Enter your username">
+                        </div>
 
-                            <button type="submit" class="btn btn-lg btn-success btn-block">Log In</button>
+                        <!-- Password -->
+                        <div class="form-group input-group-newsletter">
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Enter your password">
+                        </div>
 
-                        </fieldset>
+                        <!-- Error -->
+                        <p tabindex="-1" id="log-in-error" class="text-warning">Unable to log in, please try again.</p>
+
+                        <button type="submit" class="btn btn-lg btn-default">Log In</button>
+
                     </form>
                 </div>
-
-                <!-- Error -->
-                <div id="errorBox" class="errorBox panel-footer">
-                    <p><i class="fa fa-warning"></i> <span id="errorText"></span></p>
-                </div>
-                
             </div>
         </div>
     </div>

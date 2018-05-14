@@ -21,6 +21,10 @@
         <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
         <link href="assets/css/login/main.css" type="text/css" rel="stylesheet" />
 
+        <!-- Custom fonts for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
     </head>
 
     <body>
@@ -30,9 +34,7 @@
         <!-- JS -->
         <script src="plugins/jquery/jquery.js"></script>
         <script src="plugins/bootstrap/bootstrap.min.js"></script>
-        <script src="assets/js/sb-admin-2.js"></script>       
-
-        <?php load_scripts($scripts); ?>
+        <script src="assets/js/login.js"></script>       
 
     </body>
 </html>
