@@ -92,12 +92,8 @@ $autoload['drivers'] = array();
 $autoload['helper'] = array(
 	'url',
 	'check_session_helper',
-	'form','iconify_helper',
-	'get_user_theme_helper',
-	'get_users_helper',
-	'format_date_helper',
-	'load_scripts_helper',
-	'modal_helper'
+	'form','iconify_helper',,
+	'load_scripts_helper'
 );
 
 /*
@@ -141,4 +137,4 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('ApiModel','SearchModel','UserModel','NoteModel','GrantModel', 'ClientModel');
+$autoload['model'] = array('SearchModel','UserModel','NoteModel','GrantModel', 'ClientModel');
