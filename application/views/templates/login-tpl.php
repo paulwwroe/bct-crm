@@ -17,7 +17,7 @@
         <!-- CSS -->
         <link href="plugins/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
         <link href="plugins/font-awesome/font-awesome.css" type="text/css" rel="stylesheet" />
-        <link href="assets/css/sb-admin-2.css" type="text/css" rel="stylesheet" />
+        
         <link href="assets/css/main.css" type="text/css" rel="stylesheet" />
         <link href="assets/css/login/main.css" type="text/css" rel="stylesheet" />
 
@@ -32,9 +32,9 @@
         <?php echo $body; ?>
 
         <!-- JS -->
-        <script src="plugins/jquery/jquery.js"></script>
+        <script src="plugins/jquery/jquery.min.js"></script>
         <script src="plugins/bootstrap/bootstrap.min.js"></script>
-        <script src="assets/js/login.js"></script>       
+        <script src="assets/js/login/login.js"></script>       
 
     </body>
 </html>

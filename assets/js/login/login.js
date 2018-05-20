@@ -1,6 +1,7 @@
-(function($) {
-  "use strict"; // Start of use strict
-
+(function($) { "use strict";
+  
+  $("#log-in-error").hide();
+  
   var handleLogIn = function() {
 
     var referrer = $("#referrer").val();
@@ -35,6 +36,8 @@
 
   	$("#username").val("");
   	$("#password").val("");
+
+    $("#log-in-error").focus();
 
   };
 

@@ -92,7 +92,7 @@ $autoload['drivers'] = array();
 $autoload['helper'] = array(
 	'url',
 	'check_session_helper',
-	'form','iconify_helper',,
+	'form','iconify_helper',
 	'load_scripts_helper'
 );
 
