@@ -14,7 +14,8 @@
                     <?= form_open('user/login',array('id' => 'logInForm')) ?>
 
                         <!-- Referrer -->
-                        <input type="hidden" id="referrer" name="referrer" value="<?php echo $_GET['referrer']; ?>">
+                        <?php $referrer = isset($_GET['referrer']) ? $_GET['referrer'] : ''; ?>
+                        <input type="hidden" id="referrer" name="referrer" value="<?php echo $referrer; ?>">
 
                         <!-- Username -->
                         <div class="form-group input-group-newsletter">
